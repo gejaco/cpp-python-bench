@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cpp-python-bench
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      g++ -O3 -std=c++17 cpp_bench.cpp -o cpp_bench
+      chmod +x cpp_bench
+    startCommand: gunicorn bench_backend:app
+
