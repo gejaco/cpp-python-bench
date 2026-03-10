@@ -19,8 +19,8 @@ double run_once(long long N) {
 }
 
 int main() {
-    const long long N = 100000000; // 1e8
-    const int runs = 5;
+    const long long N = 10000000; // 1e7
+    const int runs = 3;
     std::vector<double> times;
     times.reserve(runs);
 

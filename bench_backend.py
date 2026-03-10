@@ -6,8 +6,8 @@ import time
 app = Flask(__name__, static_folder=".", static_url_path="")  # Serve files from current dir
 
 def run_python_bench():
-    N = 100_000_000
-    runs = 5
+    N = 10_000_000
+    runs = 3
     times = []
     for _ in range(runs):
         x = 0.0
